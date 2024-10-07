@@ -77,6 +77,10 @@ footer {
     .contact-info .info {
         margin-bottom: 20px;
     }
+
+    .contact-container h2 {
+        font-weight: 300;
+    }
 }
 
 
@@ -97,6 +101,10 @@ footer {
         width: 100vh;
         margin: 10vh 20vh 10vh 0;
         /* background-color: aquamarine; */
+    }
+
+    .contact-container h2 {
+        font-weight: 300;
     }
 
     .contact-info .info {

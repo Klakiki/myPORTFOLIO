@@ -274,11 +274,11 @@
     .personal-text {
         width: 100%;
         margin-left: 0;
-        /* background-color: blueviolet; */
+        font-weight: 300;
     }
     .personal-text h1 {
         font-weight: 600;
-        font-size: 2.6em;
+        font-size: 2.2em;
         margin-bottom: 20px;
     }
 
