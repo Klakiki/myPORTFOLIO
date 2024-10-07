@@ -1,0 +1,462 @@
+/* MY CERTIFICATE */
+
+.left-cert-wrapper {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--site-color-02);
+    margin-bottom: 10vh;
+    margin-top: 20vh;
+    box-shadow: 0px 10px 30px var(--site-color-gray);
+    /* border-bottom: 2px solid var(--site-color-gray); */
+}
+
+.left-cert-container {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5vh 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-cert-pic-container {
+    width: 550px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.left-cert-pic {
+    width: 100%;
+}
+
+.left-cert-container .left-cert-text {
+    position: relative;
+    width: 1000px;
+    font-family: var(--font-family-thai-minimal);
+    padding-left: 50px;
+    margin-left: 50px;
+    border-left: 2px solid var(--font-color-01);
+}
+
+.left-cert-container .left-cert-text h1.prize {
+    font-weight: 600;
+    font-size: 2.8em;
+    color: var(--font-color-02);
+    margin-bottom: 10px;
+}
+
+.left-cert-container .left-cert-text h1.cert-title {
+    width: 70%;
+    font-weight: 400;
+    font-size: 2em;
+    color: var(--font-color-02);
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.left-cert-container .left-cert-text h2.cert-date {
+    font-weight: 400;
+    color: var(--font-color-01);
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.left-cert-container .left-cert-text p.cert-paragraph {
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: .3px;
+    word-spacing: 1px;
+    line-height: 1.7;
+    color: var(--font-color-paragraph-01);
+}
+
+.left-cert-container .left-cert-text p.last-cert-paragraph {
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: .3px;
+    word-spacing: 1px;
+    line-height: 1.7;
+    color: var(--font-color-paragraph-01);
+    margin-top: 20px;
+}
+
+
+/* RELATED IMAGES */
+
+.related-images-wrapper {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+}
+
+.related-images-container {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5vh 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.related-images-container .title-container {
+    text-align: center;
+    margin-bottom: 10vh;
+    font-family: var(--font-family-thai-minimal);
+}
+
+.related-images-container .title-container .title {
+    color: var(--font-color-02);
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.related-images-container .title-container .description {
+    color: var(--font-color-01);
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.related-images-container .related-images-table {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.related-images-container .related-images-table .images-contain {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+}
+
+.related-images-container .related-images-table .images-contain img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid var(--site-color-gray);
+}
+
+.related-images-container .related-images-table .images-contain p.img-description {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--font-color-paragraph-01);
+    font-family: var(--font-family-thai-minimal);
+    margin-top: 20px;
+}
+
+
+/* PREVIOUS & NEXT PAGE */
+
+.pre-next-wrapper {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+}
+
+.pre-next-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pre-next-container .page {
+    display: flex;
+    align-items: start;
+    transition: .3s;
+}
+
+.pre-next-container .page:hover {
+    transition: .3s;
+    opacity: .7;
+}
+
+.pre-next-container img {
+    width: 50px;
+    margin: 0 50px;
+}
+
+.pre-next-container a {
+    text-decoration: none;
+    color: var(--font-color-01);
+    font-family: var(--font-family-elegant);
+    font-size: 3em;
+}
+
+.pre-next-container .icon-white {
+    display: none;
+}
+
+.pre-next-container a.btn-white {
+    display: none;
+}
+
+
+
+/* MOBILE VERSION (PORTRAIT) */
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+
+    .left-cert-wrapper {
+        margin-top: 15vh;
+        padding: 0 0 5vh 0;
+    }
+
+    .left-cert-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        /* background-color: aquamarine; */
+    }
+
+    .left-cert-pic-container {
+        width: 100%;
+        height: auto;
+        margin-bottom: 5vh;
+    }
+
+    .left-cert-container .left-cert-text {
+        position: relative;
+        width: 100%;
+        font-family: var(--font-family-thai-minimal);
+        padding-left: 0;
+        margin-left: 0;
+        border-left: 0;
+    }
+
+    .left-cert-container .left-cert-text h1.prize {
+        text-align: center;
+        font-size: 2.8em;
+        line-height: 1.2;
+        margin-bottom: 2vh;
+    }
+    
+    .left-cert-container .left-cert-text h1.cert-title {
+        text-align: center;
+        width: 100%;
+        font-size: 1.6em;
+        margin-bottom: 0;
+    }
+
+    .left-cert-container .left-cert-text h2.cert-date {
+        text-align: center;
+        font-weight: 400;
+        color: var(--font-color-01);
+        font-size: 1.3em;
+        margin-bottom: 20px;
+    }
+    
+
+    /* RELATED IMAGES */
+
+    .related-images-wrapper {
+        margin-bottom: 0vh;
+    }
+
+    .related-images-container .title-container {
+        margin-bottom: 5vh;
+    }
+
+    .related-images-container .title-container .title {
+        font-size: 2.5em;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    
+    .related-images-container .title-container .description {
+        color: var(--font-color-01);
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+
+    .related-images-container .related-images-table {
+        grid-template-columns: 1fr;
+    }
+    
+    .related-images-container .related-images-table .images-contain {
+        padding: 3vh 0px 5vh;
+    }
+
+    .related-images-container .related-images-table .images-contain p.img-description {
+        line-height: 1.5;
+        margin-top: 15px;
+    }
+
+
+    /* PREVIOUS & NEXT PAGE */
+
+    .pre-next-wrapper {
+        margin-bottom: 5vh;
+        margin-top: 0vh;
+        justify-content: center;
+    }
+
+    .pre-next-container {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pre-next-container .page {
+        display: flex;
+        align-items: center;
+        transition: .3s;
+    }
+
+    .pre-next-container .page:hover {
+        transition: .3s;
+        opacity: .7;
+    }
+
+    .pre-next-container img {
+        width: 30px;
+        height: auto;
+        margin: 0;
+    }
+
+    .pre-next-container a.btn {
+        text-decoration: none;
+        color: var(--font-color-01);
+        font-family: var(--font-family-elegant);
+        font-size: 1.5em;
+        padding: 0 10px;
+    }
+}
+
+
+/* MOBILE VERSION (LANDSCAPE) */
+
+@media only screen and (max-height: 600px) and (orientation: landscape) {
+
+    .left-cert-wrapper {
+        margin-top: 10vh;
+        padding: 10vh 0;
+    }
+
+    .left-cert-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .left-cert-pic-container {
+        width: 70%;
+        height: auto;
+        margin-bottom: 10vh;
+    }
+
+    .left-cert-container .left-cert-text {
+        position: relative;
+        width: 100%;
+        font-family: var(--font-family-thai-minimal);
+        padding-left: 0;
+        margin-left: 0;
+        border-left: 0;
+    }
+
+    .left-cert-container .left-cert-text h1.prize {
+        text-align: center;
+        font-size: 2.8em;
+        line-height: 1.2;
+        margin-bottom: 2vh;
+    }
+    
+    .left-cert-container .left-cert-text h1.cert-title {
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+        font-size: 1.6em;
+        margin-bottom: 0;
+    }
+
+    .left-cert-container .left-cert-text h2.cert-date {
+        text-align: center;
+        font-weight: 400;
+        color: var(--font-color-01);
+        font-size: 1.3em;
+        margin-bottom: 20px;
+    }
+
+
+    /* RELATED IMAGES */
+
+    .related-images-container .title-container .title {
+        font-size: 2.5em;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .related-images-container .related-images-table .images-contain {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .related-images-container .related-images-table .images-contain:nth-child(4) {
+        height: 100%;
+        align-items: flex-start;
+    }
+
+    .related-images-container .related-images-table .images-contain:nth-child(4) img {
+        height: auto;
+    }
+
+
+    /* PREVIOUS & NEXT PAGE */
+
+    .pre-next-wrapper {
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+        justify-content: center;
+    }
+
+    .pre-next-container {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pre-next-container .page {
+        display: flex;
+        align-items: center;
+        transition: .3s;
+    }
+
+    .pre-next-container .page:hover {
+        transition: .3s;
+        opacity: .7;
+    }
+
+    .pre-next-container img {
+        width: 30px;
+        height: auto;
+        margin: 0;
+    }
+
+    .pre-next-container a.btn {
+        text-decoration: none;
+        color: var(--font-color-01);
+        font-family: var(--font-family-elegant);
+        font-size: 1.5em;
+        padding: 0 10px;
+    }
+
+}

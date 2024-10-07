@@ -1,0 +1,174 @@
+:root {
+    /* font family*/
+    --font-family-minimal: Arial, sans-serif;
+    --font-family-elegant: 'Times New Roman', Times, serif;
+    --font-family-thai-minimal: "Kanit", sans-serif;
+
+    /* colors */
+    --font-color-01: #ab7842;
+    --font-color-01-hover: #e0ae79;
+    --font-color-02: #4d341b;
+    --font-color-02-hover: #a28f7c;
+    --font-color-03: #b79072;
+    --font-color-paragraph-01: #82756a;
+    --font-color-paragraph-02: #e3e3e391;
+    --font-color-04: #e1ebc8;
+
+    --site-color-02: #f2e9e0;
+    --site-color-gray: #d7cfc5;
+}
+
+* {
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: var(--font-family-minimal);
+}
+
+/* BURGER MENU */
+.burger-menu, 
+.burger-menu-btn {
+    display: none;
+}
+
+
+.navigator {
+    position: fixed;
+    width: 100%;
+    min-height: 10vh;
+    background-color: white;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navigator .logo a{
+    font-size: 2.5em;
+    font-weight: 600;
+    color: var(--font-color-01);
+    text-decoration: none;
+    transition: .3s;
+}
+.navigator .logo a:hover{
+    color: var(--font-color-01-hover);
+    transition: .3s;
+}
+
+.navigator .nav-bar a{
+    position: relative;
+    margin: 20px;
+    text-decoration: none;
+    color: var(--font-color-01);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    transition: .5s;
+}
+.navigator .nav-bar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 3px;
+    transform-origin: right;
+    background-color: var(--font-color-01);
+    transform: scale(0);
+    transition: transform .3s;
+}
+.navigator .nav-bar a:hover:after{
+    transform-origin: left;
+    transform: scale(1);
+}
+
+
+
+/* Mobile version (PORTRAIT)*/
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    /* BURGER MENU */
+    .burger-menu-btn {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url(../images/icons/menu.png), url(../images/icons/close.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center, center left 50px;
+    }
+
+    .burger-menu {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 900;
+        background-color: var(--site-color-01);
+        transition: 1s;
+    }
+    .burger-nav {
+        width: 100%;
+        height: 50vh;
+        padding-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        background-color: white;
+        border-bottom: 2px solid var(--site-color-gray);
+    }
+    .burger-nav a:nth-child(1),
+    .burger-nav a:nth-child(2),
+    .burger-nav a:nth-child(3) {
+        width: 100%;
+        padding: 30px 0;
+        font-size: 1.5em;
+        text-decoration: none;
+        text-align: center;
+        color: var(--font-color-01);
+    }
+    .burger-nav a:last-child {
+        padding: 30px 30px 60px ;
+        font-size: 1.5em;
+        text-decoration: none;
+        color: var(--font-color-01);
+    }
+
+
+    /* NAVBAR */
+
+    .navigator {
+        padding: 0px 20px;
+    }
+
+    .navigator .logo a{
+        font-size: 1.8em;
+    }
+    
+    .navigator .nav-bar{
+        display: none;
+    }
+}
+
+/* Mobile version (LANDSCAPE)*/
+
+@media only screen and (max-height: 600px) and (orientation: landscape) {
+
+    .navigator {
+        position: fixed;
+        width: 100%;
+        height: 12vh;
+        padding: 0px 5vh;
+    }
+
+    .navigator .logo a{
+        font-size: 1.7em;
+    }
+    
+}

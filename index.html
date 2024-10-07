@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klanarong</title>
+    <!-- link to stylesheets -->
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <!-- link to google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- link to font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link to swiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+
+    <!-- BURGER MENU -->
+    <div class="burger-menu">
+        <div class="burger-nav">
+            <a class="nav-home" href="index.html">HOME</a>
+            <a class="nav-about" href="about_me.html">ABOUT ME</a>
+            <a class="nav-certificate" href="certificate.html">CERTIFICATES</a>
+            <a class="nav-contact" href="#contact-footer">CONTACT</a>
+        </div>
+    </div>
+
+
+    <!-- THE HEADER OF THE WEBSITE -->
+    <header>
+        <nav class="navigator">
+            <div class="logo">
+                <a href="index.html">Klanarong</a>
+            </div>
+            <div class="nav-bar">
+                <a class="nav-home" href="index.html">HOME</a>
+                <a class="nav-about" href="about_me.html">ABOUT ME</a>
+                <a class="nav-certificate" href="certificate.html">CERTIFICATES</a>
+                <a class="nav-contact" href="#contact-footer">CONTACT</a>
+            </div>
+            <div class="burger-menu-btn"></div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="intro">
+            <div class="introduction">
+                <h1 class="greeting">WELCOME!</h1>
+                <h1 class="firstname">I'm Klanarong</h1>
+                <h1 class="surname">Sawangwattanasiri</h1>
+                <p>Student & Future Developer</p>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- FAMOUS QUOTES -->
+    <section class="quote-container">
+        <div class="slider-wrapper">
+            <div class="slider" id="slider">
+                <div id="slide-1" class="quotes">
+                    <h1 class="quote-title">"The greatest glory in living lies not in never falling, but in rising every time we fall."</h1>
+                    <p class="person">Nelson Mandela</p>
+                </div>
+                <div id="slide-2" class="quotes">
+                    <h1 class="quote-title">"Do not go where the path may lead, go instead where there is no path and leave a trail."</h1>
+                    <p class="person">Ralph Waldo Emerson</p>
+                </div>
+                <div id="slide-3" class="quotes">
+                    <h1 class="quote-title">"The future belongs to those who believe in the beauty of their dreams."</h1>
+                    <p class="person">Eleanor Roosevelt</p>
+                </div>
+                <div id="slide-4" class="quotes">
+                    <h1 class="quote-title">"You miss 100% of the shots you don't take."</h1>
+                    <p class="person">Wayne Gretzky</p>
+                </div>
+                <div id="slide-5" class="quotes">
+                    <h1 class="quote-title">"If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success."</h1>
+                    <p class="person">James Cameron</p>
+                </div>
+            </div>
+            <!-- slider nav -->
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+                <a href="#slide-5"></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- THE FOOTER OF THE WEBSITE -->
+    <footer>
+        <div class="contact-container " id="contact-footer">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div class="info num1">
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="phone">093-492-6908</p>
+                </div>
+                <div class="info num2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a class="link gmail" href="https://mail.google.com/" target="_blank">klanarong1608th@gmail.com</a>
+                </div>
+                <div class="info num3">
+                    <i id="icon" class="fa-brands fa-instagram"></i>
+                    <a class="link instagram" href="https://www.instagram.com/klakiki_/" target="_blank">klakiki_</a>
+                </div>
+                <div class="info num4">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="address">93/1 Bangphli-Tumru R.  Bangphliyai Bangphli  Samuthprakan  10540,  Thailand</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JS scripts -->
+    <script src="scripts/header.js">  </script>
+    <script src="scripts/index.js">  </script>
+    <!-- link to swiperJS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>

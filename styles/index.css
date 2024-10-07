@@ -1,0 +1,266 @@
+
+/* INDEX WRAPPER */
+
+.intro {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/background/webport_bg_home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right 0% bottom 50%;
+}
+
+.introduction {
+    height: 50vh;
+    width: 150vh;
+    margin: 10vh auto 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+}
+.introduction h1 {
+    position: relative;
+    font-size: 4em;
+    font-weight: 500;
+    color: var(--font-color-02);
+    margin-bottom: 50px;
+}
+.introduction h1.greeting {
+    font-size: 6em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.introduction h1.firstname {
+    margin-bottom: 0px;
+}
+.introduction h1.surname::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--font-color-02);
+}
+.introduction p {
+    font-size: 2.5em;
+    color: var(--font-color-02);
+    font-family: var(--font-family-elegant);
+}
+
+
+/* QUOTES */
+
+.quote-container {
+    min-height: 50vh;
+    width: 100%;
+    padding-bottom: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 2px solid var(--site-color-gray);
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+}
+
+.slider-wrapper .slider {
+    display: flex;
+    /* aspect-ratio: 16 / 11; */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 1rem;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.slider::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.slider .quotes {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    text-align: center;
+}
+
+.quotes .quote-title {
+    font-size: 3em;
+    color: var(--font-color-01);
+    margin: 0 0 50px;
+}
+
+.quotes .person {
+    font-size: 1.5em;
+    font-family: var(--font-family-elegant);
+    color: var(--font-color-02);
+    font-weight: 400;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1.5rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 45%;
+    top: 140%;
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: var(--font-color-01);
+    opacity: 0.5;
+    transition: opacity ease .25s;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+
+
+
+
+/* Mobile version (PORTRAIT) */
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+
+    /* MAIN CONTENT */
+
+    .intro {
+        height: 100vh;
+        background-image: url(../images/background/webport_bg_home\(mobile_potrait\).png);
+        background-position: center;
+    }
+
+    .introduction {
+        width: 90%;
+        height: 80vh;
+        justify-content: end;
+        padding-bottom: 5vh;
+    }
+
+    .introduction h1 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+
+    .introduction h1.greeting {
+        font-size: 4em;
+        margin-bottom: 10px;
+    }
+
+    .introduction h1.surname::after {
+        bottom: -12px;;
+    }
+
+    .introduction p {
+        font-size: 1.8em;
+    }
+
+
+    /* QUOTES */
+    .quote-container  {
+        height: fit-content;
+    }
+
+    .slider-wrapper {
+        position: relative;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .quotes .quote-title {
+        font-size: 2.3em;
+        margin: 8vh 0 5vh;
+    }
+    
+    .quotes .person {
+        font-size: 1.5em;
+    }
+
+    .slider-nav {
+        left: 30%;
+        top: 110%;
+    }
+}
+
+
+/* Mobile version (LANDSCAPE)*/
+
+@media only screen and (max-height: 600px) and (orientation: landscape) {
+
+    /* MAIN CONTENT */
+    
+    .intro {
+        width: 100%;
+        height: calc(100vh - 12vh);
+        margin-top: 12vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .introduction {
+        width: 90%;
+        height: 80%;
+        margin: 0;
+        padding-bottom: 0;
+        /* background-color: aquamarine; */
+    }
+
+    .introduction h1.greeting {
+        font-size: 3.5em;
+        margin-bottom: 10px;
+    }
+
+    .introduction h1 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+
+    .introduction p {
+        font-size: 1.8em;
+    }
+    
+
+    /* QUOTES */
+    .quote-container  {
+        height: 70vh;
+        padding: 0 0 10vh;
+    }
+
+    .slider-wrapper {
+        position: relative;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .quotes .quote-title {
+        font-size: 2em;
+        margin: 8vh 0 5vh;
+    }
+    
+    .quotes .person {
+        font-size: 1.5em;
+    }
+
+    .slider-nav {
+        left: 41%;
+        top: 110%;
+    }
+}
